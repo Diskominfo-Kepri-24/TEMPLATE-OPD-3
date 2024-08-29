@@ -5,19 +5,20 @@ import { FaYoutube, FaInstagram, FaFacebook, FaTiktok, FaTwitter } from 'react-i
 const Footer = () => {
   return (
     <footer className="bg-gray-900 text-white mt-auto">
-      <div className="container mx-auto grid grid-cols-1 lg:grid-cols-4 gap-8 px-4">
+      <div className="container mx-auto px-4 py-8 grid grid-cols-1 lg:grid-cols-4 gap-8">
+        
         {/* Left Section */}
         <div className="lg:col-span-2 text-left">
-          <h2 className="text-3xl font-bold pb-10 mt-8">Portal Website OPD Pemprov Kepri</h2>
+          <h2 className="text-3xl font-bold mb-4">Portal Website OPD Pemprov Kepri</h2>
           <p className="text-sm mb-4">
             Portal ini dikembangkan dan dikelola oleh Dinas Komunikasi dan Informatika Provinsi Kepulauan Riau.
           </p>
-          <p className="text-sm">
-            Alamat: Pusat Pemerintahan Provinsi Kepulauan Riau Istana Kota Piring Gedung Sultan Mahmud Riayat Syah, 
+          <p className="text-sm mb-4">
+            Alamat: Pusat Pemerintahan Provinsi Kepulauan Riau, Istana Kota Piring Gedung Sultan Mahmud Riayat Syah, 
             Pulau Dompak, Kec. Bukit Bestari, Kota Tanjungpinang.
           </p>
-          <p className="text-sm mt-2">Email: email@kepriprov.go.id, Telepon: 0771-123456</p>
-          <h3 className="text-lg font-bold mt-4">Jam Layanan</h3>
+          <p className="text-sm mb-4">Email: email@kepriprov.go.id, Telepon: 0771-123456</p>
+          <h3 className="text-lg font-bold mb-2">Jam Layanan</h3>
           <p className="text-sm">
             Senin - Kamis (08:00 s/d 16:00), Jumat (08:00 s/d 15:00), Sabtu-Minggu (Libur)
           </p>
@@ -25,7 +26,7 @@ const Footer = () => {
 
         {/* Social Media Section */}
         <div className="text-left">
-          <h3 className="text-lg font-bold mb-2 mt-8">Sosial Media</h3>
+          <h3 className="text-lg font-bold mb-4">Sosial Media</h3>
           <ul className="space-y-2">
             <li><a href="#" className="flex items-center space-x-2 hover:underline"><FaYoutube /> <span>Youtube</span></a></li>
             <li><a href="#" className="flex items-center space-x-2 hover:underline"><FaInstagram /> <span>Instagram</span></a></li>
@@ -37,7 +38,7 @@ const Footer = () => {
 
         {/* Visitor Statistics Section */}
         <div className="text-left">
-          <h3 className="text-lg font-bold mb-2 mt-8">Statistik Kunjungan</h3>
+          <h3 className="text-lg font-bold mb-4">Statistik Kunjungan</h3>
           <ul className="space-y-2">
             <li>Sedang Online: <span className="float-right">14</span></li>
             <li>Hari Ini: <span className="float-right">7,458</span></li>
@@ -49,8 +50,8 @@ const Footer = () => {
 
         {/* Supported By Section */}
         <div className="text-left">
-          <h3 className="text-lg font-bold mb-2">Didukung Oleh</h3>
-          <div className="flex justify-start space-x-4">
+          <h3 className="text-lg font-bold mb-4">Didukung Oleh</h3>
+          <div className="flex space-x-4">
             <img src="/assets/logo.png" alt="Support Logo 1" className="h-12" />
             <img src="/assets/logo.png" alt="Support Logo 2" className="h-12" />
           </div>
@@ -58,7 +59,7 @@ const Footer = () => {
       </div>
 
       {/* Bottom Section */}
-      <div className="bg-gray-800 text-center py-6 mt-8">
+      <div className="bg-gray-800 text-center py-6">
         <p className="text-sm">
           Copyright © 2022 Pemerintah Provinsi Kepulauan Riau
         </p>
