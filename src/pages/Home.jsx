@@ -93,21 +93,21 @@ export default function Home() {
           </div>
 
           {/* Grid Layout for News Cards */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
-            {/* Main News Section */}
-            <div className="lg:col-span-1 bg-white rounded-lg shadow-lg overflow-hidden group">
-              <a href="/detail-berita-utama" classname="group">
-              <img src="/assets/berita1.jpg" alt="Main News" className="w-full h-auto object-cover transition-transform duration-300 ease-in-out transform group-hover:scale-105" />
-              <div className="p-4">
-                <h2 className="text-lg font-bold text-blue-900 mb-2 hover:text-blue-500">
-                  Rumah Singgah Provinsi Kepri, Terbukti Meringankan Beban Masyarakat & Meningkatkan Akses Kesehatan
-                </h2>
-                <p className="text-gray-600 text-sm">
-                  <FontAwesomeIcon icon={faClock} className="mr-1 " />11 bulan lalu • <FontAwesomeIcon icon={faLocationDot} className="ml-2 mr-1" />Gubernur
-                </p>
-              </div>
-              </a>
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
+        {/* Main News Section */}
+        <div className="lg:col-span-1 bg-white rounded-lg shadow-lg overflow-hidden group">
+          <a href="/detail-berita-utama" className="group">
+            <img src="/assets/berita1.jpg" alt="Main News" className="w-full h-auto object-cover transition-transform duration-300 ease-in-out transform group-hover:scale-105" />
+            <div className="p-4">
+              <h2 className="text-lg font-bold text-blue-900 mb-2 hover:text-blue-500 text-left">
+                Rumah Singgah Provinsi Kepri, Terbukti Meringankan Beban Masyarakat & Meningkatkan Akses Kesehatan
+              </h2>
+              <p className="text-gray-600 text-sm text-left">
+                <FontAwesomeIcon icon={faClock} className="mr-1 " />11 bulan lalu • <FontAwesomeIcon icon={faLocationDot} className="ml-2 mr-1" />Gubernur
+              </p>
             </div>
+          </a>
+        </div>
 
             {/* Sidebar with Article List */}
             <div className="bg-white rounded-lg shadow-lg p-4">
@@ -123,10 +123,10 @@ export default function Home() {
                           Politik
                         </span>
                       </div>
-                      <h3 className="text-blue-900 font-semibold text-sm leading-tight overflow-hidden mt-1 hover:text-blue-500" style={{ display: '-webkit-box', WebkitLineClamp: 2, WebkitBoxOrient: 'vertical' }}>
+                      <h3 className="text-blue-900 font-semibold text-sm leading-tight overflow-hidden mt-1 hover:text-blue-500 text-left" style={{ display: '-webkit-box', WebkitLineClamp: 2, WebkitBoxOrient: 'vertical' }}>
                         Visitasi Kepemimpinan Nasional, Kolaborasi Pemprov Kepri dan Kaltim
                       </h3>
-                      <p className="text-gray-600 text-xs mt-1">
+                      <p className="text-gray-600 text-xs mt-1 text-left">
                         <FontAwesomeIcon icon={faClock} className="mr-1 " />2 hari lalu • <FontAwesomeIcon icon={faLocationDot} className="ml-2 mr-1" />Sekretariat Daerah
                       </p>
                     </div>
@@ -144,10 +144,10 @@ export default function Home() {
                           Daerah
                         </span>
                       </div>
-                      <h3 className="text-blue-900 font-semibold text-sm leading-tight overflow-hidden mt-1 hover:text-blue-500" style={{ display: '-webkit-box', WebkitLineClamp: 2, WebkitBoxOrient: 'vertical' }}>
+                      <h3 className="text-blue-900 font-semibold text-sm leading-tight overflow-hidden mt-1 hover:text-blue-500 text-left" style={{ display: '-webkit-box', WebkitLineClamp: 2, WebkitBoxOrient: 'vertical' }}>
                         Gubernur Ansar Tegaskan Komitmen Anti-Korupsi: Fokus pada Perizinan dan Pengadaan Barang di Kepri
                       </h3>
-                      <p className="text-gray-600 text-xs mt-1">
+                      <p className="text-gray-600 text-xs mt-1 text-left">
                         <FontAwesomeIcon icon={faClock} className="mr-1 " />2 hari lalu • <FontAwesomeIcon icon={faLocationDot} className="ml-2 mr-1" />Infrastruktur
                       </p>
                     </div>
@@ -165,10 +165,10 @@ export default function Home() {
                           Nasional
                         </span>
                       </div>
-                      <h3 className="text-blue-900 font-semibold text-sm leading-tight overflow-hidden mt-1 hover:text-blue-500" style={{ display: '-webkit-box', WebkitLineClamp: 2, WebkitBoxOrient: 'vertical' }}>
+                      <h3 className="text-blue-900 font-semibold text-sm leading-tight overflow-hidden mt-1 hover:text-blue-500 text-left" style={{ display: '-webkit-box', WebkitLineClamp: 2, WebkitBoxOrient: 'vertical' }}>
                         Silaturahmi Ke Batu Aji, Gubernur Ansar: SPP Gratis Untuk SMA Sudah Berlaku
                       </h3>
-                      <p className="text-gray-600 text-xs mt-1">
+                      <p className="text-gray-600 text-xs mt-1 text-left">
                         <FontAwesomeIcon icon={faClock} className="mr-1 " />1 hari lalu • <FontAwesomeIcon icon={faLocationDot} className="ml-2 mr-1" />Gubernur
                       </p>
                     </div>
@@ -186,10 +186,10 @@ export default function Home() {
                           Pendidikan
                         </span>
                       </div>
-                      <h3 className="text-blue-900 font-semibold text-sm leading-tight overflow-hidden mt-1 hover:text-blue-500" style={{ display: '-webkit-box', WebkitLineClamp: 2, WebkitBoxOrient: 'vertical' }}>
+                      <h3 className="text-blue-900 font-semibold text-sm leading-tight overflow-hidden mt-1 hover:text-blue-500 text-left" style={{ display: '-webkit-box', WebkitLineClamp: 2, WebkitBoxOrient: 'vertical' }}>
                         Gubernur Ansar Buka Rakor Pengawas Desa 2024: Wujudkan Pengelolaan Dana Desa yang Efektif dan Transparan
                       </h3>
-                      <p className="text-gray-600 text-xs mt-1">
+                      <p className="text-gray-600 text-xs mt-1 text-left">
                         <FontAwesomeIcon icon={faClock} className="mr-1 " />2 hari lalu • <FontAwesomeIcon icon={faLocationDot} className="ml-2 mr-1" />Gubernur
                       </p>
                     </div>
