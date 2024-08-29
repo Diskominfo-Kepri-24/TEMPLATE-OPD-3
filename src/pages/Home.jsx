@@ -13,9 +13,15 @@ export default function Home() {
       <div
         className="bg-cover bg-center min-h-screen flex flex-col justify-center items-center bg-hero-pattern"
       >
+<<<<<<< HEAD
         <div className="p-8 rounded-lg  text-center max-w-2xl">
           <h1 className="text-5xl font-bold text-blue-800 mb-8">
             Berpancang Amanah Bersauh Marwah
+=======
+        <div className="bg-white bg-opacity-70 p-8 rounded-lg shadow-lg text-center max-w-2xl">
+          <h1 className="text-5xl font-bold text-blue-900 mb-4">
+            erpancang Amanah Bersauh 
+>>>>>>> affcb0fde4d2256f41c5cd95aa7dab8f8de36dab
           </h1>
           <p className="text-xl text-white mb-8">
             Selamat Datang di Portal Website Provinsi Kepulauan Riau
