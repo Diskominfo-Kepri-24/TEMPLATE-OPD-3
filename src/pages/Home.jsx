@@ -6,8 +6,7 @@ import instansiicon from '/src/assets/icons/residential-area-svgrepo-com.svg';
 import moneyicon from '/src/assets/icons/bag-cash-currency-svgrepo-com.svg';
 import laporicon from '/src/assets/icons/ads-advertising-color-svgrepo-com.svg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faClock } from '@fortawesome/free-solid-svg-icons';
-
+import { faClock, faLocationDot } from '@fortawesome/free-solid-svg-icons';
 
 export default function Home() {
   return (
@@ -84,105 +83,124 @@ export default function Home() {
 
       {/* News Section */}
       <div className="bg-gray-100 py-8 flex justify-center items-center min-h-screen">
-        <div className="container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-4 px-16 max-w-7xl">
-          {/* Main News Section */}
-          <div className="lg:col-span-1 bg-white rounded-lg shadow-lg overflow-hidden">
-            <img src="/assets/berita1.jpg" alt="Main News" className="w-full h-auto object-cover" />
-            <div className="p-4">
-              <h2 className="text-lg font-bold text-blue-900 mb-2 hover:text-blue-500">
-                Rumah Singgah Provinsi Kepri, Terbukti Meringankan Beban Masyarakat & Meningkatkan Akses Kesehatan
-              </h2>
-              <p className="text-gray-600 text-sm">
-                <FontAwesomeIcon icon={faClock} className="mr-1 " />11 bulan lalu • Gubernur
-              </p>
-            </div>
+        <div className="container mx-auto px-16 max-w-7xl">
+          {/* Section Title */}
+          <div className="text-center mb-8">
+            <h2 className="text-3xl font-bold text-gray-900">Berita Terbaru</h2>
+            <p className="text-gray-600 mt-2">
+              Temukan Berita Terbaru Dari OPD Provinsi Kepulauan Riau
+            </p>
           </div>
 
-          {/* Sidebar with Article List */}
-          <div className="bg-white rounded-lg shadow-lg p-4">
-            <ul>
-            <li className="flex mb-4 items-start">
-                <a href="/detail-artikel-1" className="flex items-start flex-grow no-underline text-inherit hover:text-blue-500">
-                  <img src="/assets/artikel1.jpeg" alt="Artikel 1" className="w-20 h-20 rounded-md mr-4 flex-shrink-0" />
-                  <div className="flex flex-col justify-start flex-grow"> 
-                    <div style={{ display: 'flex', alignItems: 'center' }}>
-                      <span 
-                        className="bg-blue-100 text-blue-800 text-[12px] font-medium px-[6px] py-[2px] rounded-lg"
-                        style={{ display: 'inline-block', whiteSpace: 'nowrap', width: 'auto !important' }}>
-                        Politik
-                      </span>
-                    </div>
-                    <h3 className="text-blue-900 font-semibold text-sm leading-tight overflow-hidden mt-1 hover:text-blue-500" style={{ display: '-webkit-box', WebkitLineClamp: 2, WebkitBoxOrient: 'vertical' }}>
-                      Visitasi Kepemimpinan Nasional, Kolaborasi Pemprov Kepri dan Kaltim
-                    </h3>
-                    <p className="text-gray-600 text-xs mt-1">
-                    <FontAwesomeIcon icon={faClock} className="mr-1 " />2 hari lalu • Sekretariat Daerah
-                    </p>
-                  </div>
-                </a>
-            </li>
+          {/* Grid Layout for News Cards */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
+            {/* Main News Section */}
+            <div className="lg:col-span-1 bg-white rounded-lg shadow-lg overflow-hidden group">
+              <a href="/detail-berita-utama" classname="group">
+              <img src="/assets/berita1.jpg" alt="Main News" className="w-full h-auto object-cover transition-transform duration-300 ease-in-out transform group-hover:scale-105" />
+              <div className="p-4">
+                <h2 className="text-lg font-bold text-blue-900 mb-2 hover:text-blue-500">
+                  Rumah Singgah Provinsi Kepri, Terbukti Meringankan Beban Masyarakat & Meningkatkan Akses Kesehatan
+                </h2>
+                <p className="text-gray-600 text-sm">
+                  <FontAwesomeIcon icon={faClock} className="mr-1 " />11 bulan lalu • <FontAwesomeIcon icon={faLocationDot} className="ml-2 mr-1" />Gubernur
+                </p>
+              </div>
+              </a>
+            </div>
 
-              <li className="flex mb-4 items-start">
-              <a href="/detail-artikel-1" className="flex items-start flex-grow no-underline text-inherit hover:text-blue-800">
-                <img src="/assets/artikel1.jpeg" alt="Artikel 2" className="w-20 h-20 rounded-md mr-4 flex-shrink-0" />
-                <div className="flex flex-col justify-between flex-grow">
-                <div style={{ display: 'flex', alignItems: 'center' }}>
-                <span 
-                  className="bg-green-100 text-green-800 text-[12px] font-medium px-[6px] py-[2px] rounded-lg"
-                  style={{ display: 'inline-block', whiteSpace: 'nowrap', width: 'auto !important' }}>
-                  Daerah
-                </span>
-                </div>
-                <h3 className="text-blue-900 font-semibold text-sm leading-tight overflow-hidden mt-1 hover:text-blue-500" style={{ display: '-webkit-box', WebkitLineClamp: 2, WebkitBoxOrient: 'vertical' }}>
-                    Gubernur Ansar Tegaskan Komitmen Anti-Korupsi: Fokus pada Perizinan dan Pengadaan Barang di Kepri
-                  </h3>
-                  <p className="text-gray-600 text-xs mt-1">
-                  <FontAwesomeIcon icon={faClock} className="mr-1 " />2 hari lalu • Infrastruktur
-                  </p>
-                </div>
-                </a>
-              </li>
-              <li className="flex mb-4 items-start">
-                <img src="/assets/artikel1.jpeg" alt="Artikel 3" className="w-20 h-20 rounded-md mr-4 flex-shrink-0" />
-                <div className="flex flex-col justify-between flex-grow">
-                <div style={{ display: 'flex', alignItems: 'center' }}>
-                <span 
-                  className="bg-yellow-100 text-yellow-500 text-[12px] font-medium px-[6px] py-[2px] rounded-lg"
-                  style={{ display: 'inline-block', whiteSpace: 'nowrap', width: 'auto !important' }}>
-                  Nasional
-                </span>
-                </div>
-                <h3 className="text-blue-900 font-semibold text-sm leading-tight overflow-hidden mt-1 hover:text-blue-500" style={{ display: '-webkit-box', WebkitLineClamp: 2, WebkitBoxOrient: 'vertical' }}>
-                    Silaturahmi Ke Batu Aji, Gubernur Ansar: SPP Gratis Untuk SMA Sudah Berlaku
-                  </h3>
-                  <p className="text-gray-600 text-xs mt-1">
-                  <FontAwesomeIcon icon={faClock} className="mr-1 " />1 hari lalu • Gubernur
-                  </p>
-                </div>
-              </li>
-              <li className="flex mb-4 items-start">
-                <img src="/assets/artikel1.jpeg" alt="Artikel 4" className="w-20 h-20 rounded-md mr-4 flex-shrink-0" />
-                <div className="flex flex-col justify-between flex-grow">
-                <div style={{ display: 'flex', alignItems: 'center' }}>
-                <span 
-                  className="bg-red-100 text-red-800 text-[12px] font-medium px-[6px] py-[2px] rounded-lg"
-                  style={{ display: 'inline-block', whiteSpace: 'nowrap', width: 'auto !important' }}>
-                  Pendidikan
-                </span>
-                </div>
-                <h3 className="text-blue-900 font-semibold text-sm leading-tight overflow-hidden mt-1 hover:text-blue-500" style={{ display: '-webkit-box', WebkitLineClamp: 2, WebkitBoxOrient: 'vertical' }}>
-                    Gubernur Ansar Buka Rakor Pengawas Desa 2024: Wujudkan Pengelolaan Dana Desa yang Efektif dan Transparan
-                  </h3>
-                  <p className="text-gray-600 text-xs mt-1">
-                  <FontAwesomeIcon icon={faClock} className="mr-1 " />2 hari lalu • Gubernur
-                  </p>
-                </div>
-              </li>
-            </ul>
-            <div className="text-center mt-4">
-              <button className="bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600 text-sm">
-                Lihat Artikel Lainnya
-              </button>
+            {/* Sidebar with Article List */}
+            <div className="bg-white rounded-lg shadow-lg p-4">
+              <ul>
+                <li className="flex mb-4 items-start">
+                  <a href="/detail-artikel-1" className="flex items-start flex-grow no-underline text-inherit hover:text-blue-500 group">
+                    <img src="/assets/artikel1.jpeg" alt="Artikel 1" className="w-20 h-20 rounded-md mr-4 flex-shrink-0 transition-transform duration-300 ease-in-out transform group-hover:scale-105" />
+                    <div className="flex flex-col justify-start flex-grow"> 
+                      <div style={{ display: 'flex', alignItems: 'center' }}>
+                        <span 
+                          className="bg-blue-100 text-blue-800 text-[12px] font-medium px-[6px] py-[2px] rounded-lg"
+                          style={{ display: 'inline-block', whiteSpace: 'nowrap', width: 'auto !important' }}>
+                          Politik
+                        </span>
+                      </div>
+                      <h3 className="text-blue-900 font-semibold text-sm leading-tight overflow-hidden mt-1 hover:text-blue-500" style={{ display: '-webkit-box', WebkitLineClamp: 2, WebkitBoxOrient: 'vertical' }}>
+                        Visitasi Kepemimpinan Nasional, Kolaborasi Pemprov Kepri dan Kaltim
+                      </h3>
+                      <p className="text-gray-600 text-xs mt-1">
+                        <FontAwesomeIcon icon={faClock} className="mr-1 " />2 hari lalu • <FontAwesomeIcon icon={faLocationDot} className="ml-2 mr-1" />Sekretariat Daerah
+                      </p>
+                    </div>
+                  </a>
+                </li>
+
+                <li className="flex mb-4 items-start">
+                  <a href="/detail-artikel-2" className="flex items-start flex-grow no-underline text-inherit hover:text-blue-800 group">
+                    <img src="/assets/artikel1.jpeg" alt="Artikel 2" className="w-20 h-20 rounded-md mr-4 flex-shrink-0 transition-transform duration-300 ease-in-out transform group-hover:scale-105" />
+                    <div className="flex flex-col justify-between flex-grow">
+                      <div style={{ display: 'flex', alignItems: 'center' }}>
+                        <span 
+                          className="bg-green-100 text-green-800 text-[12px] font-medium px-[6px] py-[2px] rounded-lg"
+                          style={{ display: 'inline-block', whiteSpace: 'nowrap', width: 'auto !important' }}>
+                          Daerah
+                        </span>
+                      </div>
+                      <h3 className="text-blue-900 font-semibold text-sm leading-tight overflow-hidden mt-1 hover:text-blue-500" style={{ display: '-webkit-box', WebkitLineClamp: 2, WebkitBoxOrient: 'vertical' }}>
+                        Gubernur Ansar Tegaskan Komitmen Anti-Korupsi: Fokus pada Perizinan dan Pengadaan Barang di Kepri
+                      </h3>
+                      <p className="text-gray-600 text-xs mt-1">
+                        <FontAwesomeIcon icon={faClock} className="mr-1 " />2 hari lalu • <FontAwesomeIcon icon={faLocationDot} className="ml-2 mr-1" />Infrastruktur
+                      </p>
+                    </div>
+                  </a>
+                </li>
+
+                <li className="flex mb-4 items-start">
+                  <a href="/detail-artikel-3" className="flex items-start flex-grow no-underline text-inherit hover:text-blue-800 group">
+                    <img src="/assets/artikel1.jpeg" alt="Artikel 3" className="w-20 h-20 rounded-md mr-4 flex-shrink-0 transition-transform duration-300 ease-in-out transform group-hover:scale-105" />
+                    <div className="flex flex-col justify-between flex-grow">
+                      <div style={{ display: 'flex', alignItems: 'center' }}>
+                        <span 
+                          className="bg-yellow-100 text-yellow-500 text-[12px] font-medium px-[6px] py-[2px] rounded-lg"
+                          style={{ display: 'inline-block', whiteSpace: 'nowrap', width: 'auto !important' }}>
+                          Nasional
+                        </span>
+                      </div>
+                      <h3 className="text-blue-900 font-semibold text-sm leading-tight overflow-hidden mt-1 hover:text-blue-500" style={{ display: '-webkit-box', WebkitLineClamp: 2, WebkitBoxOrient: 'vertical' }}>
+                        Silaturahmi Ke Batu Aji, Gubernur Ansar: SPP Gratis Untuk SMA Sudah Berlaku
+                      </h3>
+                      <p className="text-gray-600 text-xs mt-1">
+                        <FontAwesomeIcon icon={faClock} className="mr-1 " />1 hari lalu • <FontAwesomeIcon icon={faLocationDot} className="ml-2 mr-1" />Gubernur
+                      </p>
+                    </div>
+                  </a>
+                </li>
+
+                <li className="flex mb-4 items-start">
+                  <a href="/detail-artikel-4" className="flex items-start flex-grow no-underline text-inherit hover:text-blue-800 group">
+                    <img src="/assets/artikel1.jpeg" alt="Artikel 4" className="w-20 h-20 rounded-md mr-4 flex-shrink-0 transition-transform duration-300 ease-in-out transform group-hover:scale-105" />
+                    <div className="flex flex-col justify-between flex-grow">
+                      <div style={{ display: 'flex', alignItems: 'center' }}>
+                        <span 
+                          className="bg-red-100 text-red-800 text-[12px] font-medium px-[6px] py-[2px] rounded-lg"
+                          style={{ display: 'inline-block', whiteSpace: 'nowrap', width: 'auto !important' }}>
+                          Pendidikan
+                        </span>
+                      </div>
+                      <h3 className="text-blue-900 font-semibold text-sm leading-tight overflow-hidden mt-1 hover:text-blue-500" style={{ display: '-webkit-box', WebkitLineClamp: 2, WebkitBoxOrient: 'vertical' }}>
+                        Gubernur Ansar Buka Rakor Pengawas Desa 2024: Wujudkan Pengelolaan Dana Desa yang Efektif dan Transparan
+                      </h3>
+                      <p className="text-gray-600 text-xs mt-1">
+                        <FontAwesomeIcon icon={faClock} className="mr-1 " />2 hari lalu • <FontAwesomeIcon icon={faLocationDot} className="ml-2 mr-1" />Gubernur
+                      </p>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+              <div className="text-center mt-4">
+                <button className="bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600 text-sm">
+                  Lihat Artikel Lainnya
+                </button>
+              </div>
             </div>
           </div>
         </div>
