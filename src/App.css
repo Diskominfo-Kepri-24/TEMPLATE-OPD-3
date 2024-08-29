@@ -42,9 +42,7 @@ body {
   }
 }
 
-.card {
-  padding: 2em;
-}
+
 
 .read-the-docs {
   color: #888;
@@ -90,4 +88,113 @@ nav span {
 
 nav .text-gray-500 {
   color: #6c757d;
+}
+
+.card {
+  padding: 2em;
+  flex: 0 0 250px;
+  margin: 0 10px;
+  background: #fff;
+  color: #333;
+  border-radius: 6px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 250ms ease-in-out;
+}
+
+.card img {
+  max-width: 80%; /* Adjusts the width of the image */
+  margin: 0 auto 20px; /* Centers the image and adds space below */
+  display: block;
+  height: auto;
+  object-fit: cover; /* Keeps the aspect ratio of the image */
+}
+
+.cards-container {
+  display: flex;
+  border-radius: 6px;
+  background: #eee;
+  padding: 1rem;
+  overflow-x: auto;
+
+}
+
+
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 1px 1rem 0px #088;
+}
+
+.card img {
+  width: 40%;
+  height: 50%;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 1rem;
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+    padding: 0 20px;
+  }
+  
+  .cards-container {
+    flex-direction: column;
+    padding: 0.5rem;
+  }
+  
+  .card {
+    flex: 1 0 auto;
+    margin: 0.5rem 0;
+  }
+}
+
+.detail-button {
+  background-color: #007bff;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.detail-button:hover {
+  background-color: #0056b3;
+}
+
+.opd-card {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  padding: 10px 20px;
+  margin: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.opd-card-image img {
+  width: 50px; /* Adjust size as needed */
+  height: 50px;
+  margin-right: 20px;
+}
+
+.opd-card-content h2 {
+  font-size: 16px;
+  color: #333;
+  flex-grow: 1;
+}
+
+.opd-detail-button {
+  padding: 8px 16px;
+  background-color: #4CAF50; /* Green background */
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.opd-detail-button:hover {
+  background-color: #45a049;
 }
