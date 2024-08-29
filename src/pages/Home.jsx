@@ -15,7 +15,7 @@ export default function Home() {
       >
         <div className="p-8 rounded-lg  text-center max-w-2xl">
           <h1 className="text-5xl font-bold text-blue-800 mb-8">
-            Bersauh Marwah
+            Berpancang Amanah Bersauh Marwah
           </h1>
           <p className="text-xl text-white mb-8">
             Selamat Datang di Portal Website Provinsi Kepulauan Riau
