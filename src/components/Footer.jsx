@@ -1,4 +1,6 @@
 import React from 'react';
+import { FaYoutube, FaInstagram, FaFacebook, FaTiktok, FaTwitter } from 'react-icons/fa';
+
 
 const Footer = () => {
   return (
@@ -6,7 +8,7 @@ const Footer = () => {
       <div className="container mx-auto grid grid-cols-1 lg:grid-cols-4 gap-8 px-4">
         {/* Left Section */}
         <div className="lg:col-span-2 text-left">
-          <h2 className="text-3xl font-bold mb-2 mt-8">Portal Website OPD Pemprov Kepri</h2>
+          <h2 className="text-3xl font-bold pb-10 mt-8">Portal Website OPD Pemprov Kepri</h2>
           <p className="text-sm mb-4">
             Portal ini dikembangkan dan dikelola oleh Dinas Komunikasi dan Informatika Provinsi Kepulauan Riau.
           </p>
@@ -25,11 +27,11 @@ const Footer = () => {
         <div className="text-left">
           <h3 className="text-lg font-bold mb-2 mt-8">Sosial Media</h3>
           <ul className="space-y-2">
-            <li><a href="#" className="hover:underline">Youtube</a></li>
-            <li><a href="#" className="hover:underline">Instagram</a></li>
-            <li><a href="#" className="hover:underline">Facebook</a></li>
-            <li><a href="#" className="hover:underline">Tiktok</a></li>
-            <li><a href="#" className="hover:underline">Twitter</a></li>
+            <li><a href="#" className="flex items-center space-x-2 hover:underline"><FaYoutube /> <span>Youtube</span></a></li>
+            <li><a href="#" className="flex items-center space-x-2 hover:underline"><FaInstagram /> <span>Instagram</span></a></li>
+            <li><a href="#" className="flex items-center space-x-2 hover:underline"><FaFacebook /> <span>Facebook</span></a></li>
+            <li><a href="#" className="flex items-center space-x-2 hover:underline"><FaTiktok /> <span>Tiktok</span></a></li>
+            <li><a href="#" className="flex items-center space-x-2 hover:underline"><FaTwitter /> <span>Twitter</span></a></li>
           </ul>
         </div>
 

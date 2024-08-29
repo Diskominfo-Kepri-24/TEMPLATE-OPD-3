@@ -49,3 +49,45 @@ body {
 .read-the-docs {
   color: #888;
 }
+
+/* styles.css atau file CSS Anda */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+/* styles.css atau file CSS Anda */
+.text-left {
+  text-align: left;
+}
+
+nav ol {
+  display: flex;
+  align-items: center;
+}
+
+nav ol li {
+  margin-right: 0.5rem;
+}
+
+nav a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+nav span {
+  color: #6c757d;
+}
+
+nav .text-gray-500 {
+  color: #6c757d;
+}
