@@ -126,6 +126,9 @@ const Navbar = () => {
               </li>
             </ul>
           </li>
+          <li>
+            <Link to="/" className="hover:text-gray-300 text-white px-5 py-1 block "></Link>
+          </li>
         </ul>
 
         {/* Hamburger Menu for Mobile */}
