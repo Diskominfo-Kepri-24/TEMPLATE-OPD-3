@@ -13,7 +13,7 @@ const Navbar = () => {
         } else {
           setNavbarBg('bg-transparent'); // Transparent background on top of Home page
         }
-      } else if (location.pathname === '/sejarah' || location.pathname === '/visi' || location.pathname === '/instansi') {
+      } else if (location.pathname === '/sejarah' || location.pathname === '/visi' || location.pathname === '/instansi')  {
         setNavbarBg('bg-blue-900'); // Fixed blue background for Sejarah and Visi pages
       } else {
         setNavbarBg('bg-transparent'); // Default transparent background for other pages
@@ -64,7 +64,7 @@ const Navbar = () => {
             </ul>
           </li>
           <li>
-            <Link to="/layanan-publik" className="hover:text-gray-300  text-white px-3 py-1 block">Layanan Publik</Link>
+            <Link to="/layanan" className="hover:text-gray-300  text-white px-3 py-1 block">Layanan Publik</Link>
           </li>
           <li className="relative group">
             <div className="hover:text-gray-300 px-3 py-1 block cursor-pointer">

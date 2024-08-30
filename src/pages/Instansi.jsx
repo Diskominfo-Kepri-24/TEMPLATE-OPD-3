@@ -80,20 +80,14 @@ const Instansi = () => {
   }, [regionIndex, opdIndex]);
 
   return (
-    <div className="container mx-auto px-4 mt-10">
-      <div className="bg-white rounded-md fade-in">
-        <div className="flex justify-between items-center">
-          <h2 className="text-2xl font-semibold text-left ">Pemerintah Provinsi Kepulauan Riau</h2>
-          <ShareButton />
-        </div>
-      </div>
+    <div className="container mx-auto px-4 mt-28">
       <h1 className="text-3xl font-bold text-center mb-10">Daftar Perangkat Daerah</h1>
       <div className="cards-container" ref={regionRef}>
         {regions.map((region, idx) => (
           <Card key={idx} region={region} />
         ))}
       </div>
-      <h1 className="text-3xl font-bold text-center mt-20 mb-20">OPD Provinsi Kepulauan Riau</h1>
+      <h1 className="text-3xl font-bold text-center mt-20 mb-10">OPD Provinsi Kepulauan Riau</h1>
       <div className="cards-container mb-36" ref={opdRef}>
         {opds.map((opd, idx) => (
           <Card key={idx} region={opd} />
