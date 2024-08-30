@@ -43,7 +43,7 @@ const Navbar = () => {
         </div>
 
         {/* Menu */}
-        <ul className="lg:flex lg:space-x-6 hidden lg:block ml-4 text-sm">
+        <ul className="flex space-x-6 text-sm w-full">
           <li>
             <Link to="/" className="hover:text-gray-300 text-white px-3 py-1 block">Beranda</Link>
           </li>
@@ -51,7 +51,7 @@ const Navbar = () => {
             <div className="hover:text-gray-300 px-3 py-1 block cursor-pointer">
               Pemerintahan
             </div>
-            <ul className="absolute left-0 bg-blue-800 text-white mt-2 py-2 rounded-lg shadow-lg transition-opacity duration-150 opacity-0 group-hover:opacity-100 group-hover:block min-w-max">
+            <ul className="absolute left-0 bg-blue-800 text-white mt-2 py-2 rounded-lg shadow-lg transition-opacity duration-150 opacity-0 group-hover:opacity-100 min-w-full">
               <li>
                 <Link to="/sejarah" className="block px-4 py-2 text-white hover:bg-blue-700">Sejarah</Link>
               </li>
@@ -70,7 +70,7 @@ const Navbar = () => {
             <div className="hover:text-gray-300 px-3 py-1 block cursor-pointer">
               Publikasi
             </div>
-            <ul className="absolute left-0 bg-blue-800 text-white mt-2 py-2 rounded-lg shadow-lg transition-opacity duration-150 opacity-0 group-hover:opacity-100 group-hover:block min-w-max">
+            <ul className="absolute left-0 bg-blue-800 text-white mt-2 py-2 rounded-lg shadow-lg transition-opacity duration-150 opacity-0 group-hover:opacity-100 min-w-full">
               <li>
                 <Link to="/berita" className="block px-4 py-2 text-white hover:bg-blue-700">Berita</Link>
               </li>
@@ -89,7 +89,7 @@ const Navbar = () => {
             <div className="hover:text-gray-300 px-3 py-1 block cursor-pointer">
               Dokumen & Peraturan
             </div>
-            <ul className="absolute left-0 bg-blue-800 text-white mt-2 py-2 rounded-lg shadow-lg transition-opacity duration-150 opacity-0 group-hover:opacity-100 group-hover:block min-w-max">
+            <ul className="absolute left-0 bg-blue-800 text-white mt-2 py-2 rounded-lg shadow-lg transition-opacity duration-150 opacity-0 group-hover:opacity-100 min-w-full">
               <li>
                 <Link to="/perda-apbd-2024" className="block px-4 py-2 text-white hover:bg-blue-700">Perda APBD 2024</Link>
               </li>
@@ -114,7 +114,7 @@ const Navbar = () => {
             <div className="hover:text-gray-300 px-3 py-1 block cursor-pointer">
               Galeri
             </div>
-            <ul className="absolute left-0 bg-blue-800 text-white mt-2 py-2 rounded-lg shadow-lg transition-opacity duration-150 opacity-0 group-hover:opacity-100 group-hover:block min-w-max">
+            <ul className="absolute right-0 bg-blue-800 text-white mt-2 py-2 rounded-lg shadow-lg transition-opacity duration-150 opacity-0 group-hover:opacity-100 min-w-full">
               <li>
                 <Link to="/aset-multimedia" className="block px-4 py-2 text-white hover:bg-blue-700">Aset Multimedia</Link>
               </li>

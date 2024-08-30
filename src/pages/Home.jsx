@@ -94,23 +94,21 @@ export default function Home() {
           </div>
 
           {/* Grid Layout for News Cards */}
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
-        {/* Main News Section */}
-        <div className="lg:col-span-1 bg-white rounded-lg shadow-lg overflow-hidden group">
-        <Link to="/detail-berita-utama">
-            <img src="/assets/berita1.jpg" alt="Main News" className="w-full h-auto object-cover transition-transform duration-300 ease-in-out transform group-hover:scale-105" />
-            <div className="p-4">
-              <h2 className="text-lg font-bold text-blue-900 mb-2 hover:text-blue-500 text-left">
-                Rumah Singgah Provinsi Kepri, Terbukti Meringankan Beban Masyarakat & Meningkatkan Akses Kesehatan
-              </h2>
-              <p className="text-gray-600 text-sm text-left">
-                <FontAwesomeIcon icon={faClock} className="mr-1 " />11 bulan lalu • <FontAwesomeIcon icon={faLocationDot} className="ml-2 mr-1" />Gubernur
-              </p>
-              
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
+            {/* Main News Section */}
+            <div className="lg:col-span-1 bg-white rounded-lg shadow-lg overflow-hidden group">
+              <a href="/detail-berita-utama" classname="group">
+              <img src="/assets/berita1.jpg" alt="Main News" className="w-full h-auto object-cover transition-transform duration-300 ease-in-out transform group-hover:scale-105" />
+              <div className="p-4">
+                <h2 className="text-lg font-bold text-blue-900 mb-2 hover:text-blue-500">
+                  Rumah Singgah Provinsi Kepri, Terbukti Meringankan Beban Masyarakat & Meningkatkan Akses Kesehatan
+                </h2>
+                <p className="text-gray-600 text-sm">
+                  <FontAwesomeIcon icon={faClock} className="mr-1 " />11 bulan lalu • <FontAwesomeIcon icon={faLocationDot} className="ml-2 mr-1" />Gubernur
+                </p>
+              </div>
+              </a>
             </div>
-            </Link>
-        </div>
-        
 
             {/* Sidebar with Article List */}
             <div className="bg-white rounded-lg shadow-lg p-4">
