@@ -13,7 +13,7 @@ const Navbar = () => {
         } else {
           setNavbarBg('bg-transparent'); // Transparent background on top of Home page
         }
-      } else if (location.pathname === '/sejarah' || location.pathname === '/visi' || location.pathname === '/instansi')  {
+      } else if (location.pathname === '/sejarah' || location.pathname === '/visi' || location.pathname === '/instansi' || location.pathname === '/layanan'  || location.pathname === '/berita') {
         setNavbarBg('bg-blue-900'); // Fixed blue background for Sejarah and Visi pages
       } else {
         setNavbarBg('bg-transparent'); // Default transparent background for other pages
@@ -127,6 +127,9 @@ const Navbar = () => {
                 <Link to="/ai-kepri" className="block px-4 py-2 text-white hover:bg-blue-700">AI Kepri</Link>
               </li>
             </ul>
+          </li>
+          <li>
+            <Link to="/" className="hover:text-gray-300 text-white px-5 py-1 block "></Link>
           </li>
         </ul>
 
