@@ -5,6 +5,7 @@ import Sejarah from './pages/Sejarah';
 import Visi from './pages/Visi'; // Pastikan import Visi sudah benar
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
+import DetailBerita from './pages/DetailBerita'; // Halaman detail berita
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/sejarah" element={<Sejarah />} />
           <Route path="/visi" element={<Visi />} /> {/* Perbaiki path dan elemen ini */}
+          <Route path="/detail-berita-utama" element={<DetailBerita />} />
         </Routes>
       </div>
       <Footer />
